@@ -2,23 +2,56 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AplusXamarinApp.MainPage">
+    <FlexLayout>
+        <StackLayout>
+            <Frame CornerRadius="120" Padding="0"  IsClippedToBounds="True" HeightRequest="250" Margin="50, 0">
+                <Image Source="https://cdn140.picsart.com/318675834007211.png" 
+                       HorizontalOptions="Center" 
+                       HeightRequest="300" 
+                       WidthRequest="300"/>
+            </Frame>
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
-    </StackLayout>
+            <StackLayout VerticalOptions="Center" Margin="0, 40, 0, 0">
+                <Frame BackgroundColor="#e8e8e8" Margin="40, 10, 40, 0">
+                    <Entry Placeholder="Логин" 
+                           PlaceholderColor="Gray"  
+                           x:Name="ELogin" 
+                           TextColor="Gray"
+                           Text="{Binding UserLogin}"/>
+                </Frame>
+                <Frame BackgroundColor="#e8e8e8" Margin="40, 30, 40, 40">
+                    <Entry Placeholder="Пароль"
+                           PlaceholderColor="Gray"
+                           TextColor="Gray"
+                           Text="{Binding UserPassword}"
+                           x:Name="EPassword"/>
+                </Frame>
+            </StackLayout>
+            
+            <FlexLayout Direction="Row" JustifyContent="SpaceBetween" Margin="49, 40, 49, 40">
+                <Button Text="Зарегистрироватьтся" 
+                        CornerRadius="200" 
+                        BackgroundColor="#00b2ff" 
+                        TextColor="White" 
+                        x:Name="BRegistration" 
+                        Clicked="BRegistration_Clicked"
+                        HeightRequest="49"
+                        WidthRequest="149"
+                        FontSize="9"
+                        Margin="0,0,11,0"/>
+
+                <Button Text="Войти" 
+                        CornerRadius="200" 
+                        BackgroundColor="#00b2ff" 
+                        TextColor="White" 
+                        x:Name="BLogin" 
+                        Clicked="BLogin_Clicked"
+                        HeightRequest="49"
+                        WidthRequest="149"
+                        FontSize="9"
+                        Margin="11,0,0,0"/>
+            </FlexLayout>
+        </StackLayout>
+    </FlexLayout>
 
 </ContentPage>

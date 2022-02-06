@@ -1,6 +1,8 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using AplusXamarinApp.Page;
+
 
 namespace AplusXamarinApp
 {
@@ -10,7 +12,7 @@ namespace AplusXamarinApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

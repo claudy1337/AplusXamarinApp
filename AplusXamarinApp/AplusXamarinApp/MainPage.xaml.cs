@@ -14,5 +14,15 @@ namespace AplusXamarinApp
         {
             InitializeComponent();
         }
+
+        private void BLogin_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BRegistration_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
