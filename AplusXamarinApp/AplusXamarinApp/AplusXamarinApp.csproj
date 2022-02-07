@@ -20,7 +20,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Page\AuthorizationPage.xaml">
+    <EmbeddedResource Update="Page\AddProjectPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Page\EditProjectPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Page\RegistrationPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AplusXamarinApp.MainPage">
-    <FlexLayout>
+    <ScrollView>
+        <FlexLayout>
         <StackLayout>
             <Frame CornerRadius="120" Padding="0"  IsClippedToBounds="True" HeightRequest="250" Margin="50, 0">
                 <Image Source="https://cdn140.picsart.com/318675834007211.png" 
@@ -11,22 +12,26 @@
                        WidthRequest="300"/>
             </Frame>
 
-            <StackLayout VerticalOptions="Center" Margin="0, 40, 0, 0">
-                <Frame BackgroundColor="#e8e8e8" Margin="40, 10, 40, 0">
+                <StackLayout VerticalOptions="Center" Margin="0, 40, 0, 0">
                     <Entry Placeholder="Логин" 
                            PlaceholderColor="Gray"  
                            x:Name="ELogin" 
                            TextColor="Gray"
-                           Text="{Binding UserLogin}"/>
-                </Frame>
-                <Frame BackgroundColor="#e8e8e8" Margin="40, 30, 40, 40">
+                           Text="{Binding UserLogin}"
+                           BackgroundColor="#e8e8e8"
+                           HeightRequest="60"
+                           Margin="40, 10, 40, 0"/>
+
                     <Entry Placeholder="Пароль"
+                           Margin="40, 30, 40, 40"
                            PlaceholderColor="Gray"
                            TextColor="Gray"
                            Text="{Binding UserPassword}"
-                           x:Name="EPassword"/>
-                </Frame>
-            </StackLayout>
+                           x:Name="EPassword"
+                           IsPassword="True"
+                           BackgroundColor="#e8e8e8"
+                           HeightRequest="60"/>
+                </StackLayout>
             
             <FlexLayout Direction="Row" JustifyContent="SpaceBetween" Margin="49, 40, 49, 40">
                 <Button Text="Зарегистрироватьтся" 
@@ -53,5 +58,5 @@
             </FlexLayout>
         </StackLayout>
     </FlexLayout>
-
+    </ScrollView>
 </ContentPage>

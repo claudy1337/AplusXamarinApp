@@ -10,11 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace AplusXamarinApp.Page
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AuthorizationPage : ContentPage
+    public partial class RegistrationPage : ContentPage
     {
-        public AuthorizationPage()
+        public RegistrationPage()
         {
             InitializeComponent();
+        }
+
+        private void BRegistration_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }
