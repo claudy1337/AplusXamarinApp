@@ -38,7 +38,6 @@
                 
             </StackLayout>
 
-
             <StackLayout Margin="0,204,0,0">
                 <Button x:Name="BRegistration" 
                         Text="Зарегистрироваться" 
@@ -48,5 +47,6 @@
                         TextColor="White"/>
             </StackLayout>
         </FlexLayout>
+        
     </ContentPage.Content>
 </ContentPage>

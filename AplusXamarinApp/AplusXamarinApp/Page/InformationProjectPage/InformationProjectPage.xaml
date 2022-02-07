@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AplusXamarinApp.Page.InformationProjectPage.InformationProjectPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem IconImageSource="Picture/info.png" Priority="0" Order="Primary" x:Name="TEditing" Clicked="TEditing_Clicked"/>
+        <ToolbarItem IconImageSource="pencil.png" Priority="0" Order="Primary" x:Name="TEditing" Clicked="TEditing_Clicked"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <ScrollView>

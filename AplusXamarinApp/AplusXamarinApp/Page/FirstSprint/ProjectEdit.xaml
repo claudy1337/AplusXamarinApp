@@ -5,7 +5,7 @@
              Title="
        Изменить проект">
     <ContentPage.ToolbarItems>
-        <ToolbarItem IconImageSource="Picture/info.png" Priority="0" Order="Primary" x:Name="TEditingProject" Clicked="TEditingProject_Clicked"/>
+        <ToolbarItem IconImageSource="trash.png" Priority="0" Order="Primary" x:Name="TEditingProject" Clicked="TEditingProject_Clicked"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
@@ -35,16 +35,7 @@
                            x:Name="EPhoneOne"                          
                            BackgroundColor="#e8e8e8"
                            HeightRequest="55"/>
-
-                <Entry Placeholder="Телефон №2"
-                           Margin="40,15,40,0"
-                           PlaceholderColor="Gray"
-                           TextColor="Gray"
-                           Text="{Binding UserPhoneTwo}"
-                           x:Name="EPhoneTwo"                          
-                           BackgroundColor="#e8e8e8"
-                           HeightRequest="55"/>
-
+                
                 <Entry Placeholder="E-mail"
                            Margin="40,20,40,0"
                            PlaceholderColor="Gray"
@@ -82,6 +73,7 @@
                         TextColor="White" 
                         x:Name="BChange" 
                         Clicked="BChange_Clicked"
+                       
                         HeightRequest="49"
                         WidthRequest="149"
                         FontSize="15"

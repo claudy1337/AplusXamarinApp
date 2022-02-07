@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using AplusXamarinApp.Page.InformationProjectPage;
 using AplusXamarinApp.Page.SecondSprint;
 using AplusXamarinApp.Page;
 using AplusXamarinApp;
+
 
 namespace AplusXamarinApp.Page.InformationProjectPage
 {
@@ -23,7 +25,7 @@ namespace AplusXamarinApp.Page.InformationProjectPage
 
         private async void TEditingProjectImages_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage());
+            await Navigation.PushAsync(new ProjectEdit());
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using AplusXamarinApp.Page.InformationProjectPage;
 using AplusXamarinApp.Page.SecondSprint;
 using AplusXamarinApp.Page;
+using AplusXamarinApp;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -33,7 +34,10 @@ namespace AplusXamarinApp.Page.SecondSprint
 
         private async void TEditingProject_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage());
+           
+            bool result = await DisplayAlert("Подтвердить действие", $"Вы точно хотите удалить ?", "Да", "Нет");
+            await DisplayAlert("Уведомление", "Вы выбрали: " + (result ? "Удалить" : "Отменить"), "OK");
+            //await Navigation.PushAsync(new MainPage());
         }
     }
 }

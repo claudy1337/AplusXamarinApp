@@ -7,6 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using AplusXamarinApp.Page.InformationProjectPage;
+using AplusXamarinApp.Page.SecondSprint;
+using AplusXamarinApp.Page;
+using AplusXamarinApp;
+
+
 namespace AplusXamarinApp.Page
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -19,7 +25,7 @@ namespace AplusXamarinApp.Page
             LVProjectsName = new List<string>();
             FillList();
             this.BindingContext = this;
-        }
+        } //TEXT = "&#X"
 
         private async void LWSelectPeoject_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {

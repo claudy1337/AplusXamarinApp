@@ -24,6 +24,16 @@ DATA BASE
 - Добавлена библеотека _sqlite-net-pcl_ 
 - Добавленно всплывающее уведомление при изменении проекта _EditPage_
 - В оглавлениях имеются адаптивные и функциональные кнопки с логотипом
+
+Packages NuGet
+===========
+> > Visual Material  **_xamarin.forms.visual.material** 
+> > SQL-Lite **_sqlite-net-pcl_** 
+> > Google Fonts  **_MaterialIcons-Regular.ttf_** 
+[тык](https://github.com/google/material-design-icons/blob/master/font/MaterialIcons-Regular.ttf)
+
+author
+===========
 **telegram**
 ```
     @wynpel 
