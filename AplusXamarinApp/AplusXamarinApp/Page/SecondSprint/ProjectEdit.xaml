@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AplusXamarinApp.Page.SecondSprint.ProjectAdd"
+             x:Class="AplusXamarinApp.Page.SecondSprint.ProjectEdit"
              Title="
-       Создать проект">
+       Изменить проект">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout VerticalOptions="Center" Margin="0, 15, 0, 0">
@@ -13,11 +13,11 @@
                            TextColor="Gray"
                            Text="{Binding ProjectName}"
                            BackgroundColor="#e8e8e8"
-                           HeightRequest="60"
+                           HeightRequest="55"
                            Margin="40, 7, 40, 0"/>
 
                 <Editor BackgroundColor="#e8e8e8" 
-                           HeightRequest="230"
+                           HeightRequest="200"
                            Placeholder="Описание"
                            x:Name="EDTitle" 
                            TextColor="Gray"
@@ -31,7 +31,16 @@
                            Text="{Binding UserPhoneOne}"
                            x:Name="EPhoneOne"                          
                            BackgroundColor="#e8e8e8"
-                           HeightRequest="60"/>
+                           HeightRequest="55"/>
+
+                <Entry Placeholder="Телефон №2"
+                           Margin="40,15,40,0"
+                           PlaceholderColor="Gray"
+                           TextColor="Gray"
+                           Text="{Binding UserPhoneTwo}"
+                           x:Name="EPhoneTwo"                          
+                           BackgroundColor="#e8e8e8"
+                           HeightRequest="55"/>
 
                 <Entry Placeholder="E-mail"
                            Margin="40,20,40,0"
@@ -40,7 +49,7 @@
                            Text="{Binding UserEmail}"
                            x:Name="EEmail"                           
                            BackgroundColor="#e8e8e8"
-                           HeightRequest="60"/>
+                           HeightRequest="55"/>
 
                 <Entry Placeholder="Адресс"
                            Margin="40,15,40,0"
@@ -49,7 +58,7 @@
                            Text="{Binding UserAddress}"
                            x:Name="EAddress"                          
                            BackgroundColor="#e8e8e8"
-                           HeightRequest="60"/>
+                           HeightRequest="55"/>
             </StackLayout>
 
             <FlexLayout Direction="Row" JustifyContent="SpaceBetween" Margin="49, 40, 49, 40">
@@ -62,18 +71,18 @@
                         HeightRequest="49"
                         WidthRequest="149"
                         FontSize="15"
-                        Margin="0,15,11,0"/>
+                        Margin="0,-5,11,0"/>
 
-                <Button Text="Добавить" 
+                <Button Text="Изменить" 
                         CornerRadius="200" 
                         BackgroundColor="#00b2ff" 
                         TextColor="White" 
-                        x:Name="BAddProjece" 
-                        Clicked="BAddProjece_Clicked"
+                        x:Name="BChange" 
+                        Clicked="BChange_Clicked"
                         HeightRequest="49"
                         WidthRequest="149"
                         FontSize="15"
-                        Margin="11,15,0,0"/>
+                        Margin="11,-5,0,0"/>
             </FlexLayout>
         </StackLayout>
     </ContentPage.Content>
