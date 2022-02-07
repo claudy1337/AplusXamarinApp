@@ -11,6 +11,8 @@ using AplusXamarinApp.Page.InformationProjectPage;
 using AplusXamarinApp.Page.SecondSprint;
 using AplusXamarinApp.Page;
 using AplusXamarinApp;
+using AplusXamarinApp.Data;
+using AplusXamarinApp.Models;
 
 
 
@@ -26,9 +28,16 @@ namespace AplusXamarinApp.Page.InformationProjectPage
 
         private async void TEditingContacts_Clicked(object sender, EventArgs e)
         {
+            var friend = (User)BindingContext;
+            if (!String.IsNullOrEmpty(friend.UserPhoneOne))
+            {
+                App.Database.SaveItem(friend);
+            }
+           
             //await Navigation.PushAsync(new ProjectEdit());
             await Navigation.PushAsync(new ProjectEdit());
             
         }
+       
     }
 }

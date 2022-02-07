@@ -11,6 +11,8 @@ using AplusXamarinApp;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using AplusXamarinApp.Models;
+using AplusXamarinApp.Data;
 
 namespace AplusXamarinApp.Page.SecondSprint
 {
@@ -20,10 +22,17 @@ namespace AplusXamarinApp.Page.SecondSprint
         public ProjectEdit()
         {
             InitializeComponent();
+           
+        }
+        protected override void OnAppearing()
+        {
+            EPhoneOne.Text = App.Database.ToString();
+            base.OnAppearing();
         }
 
         private void BChange_Clicked(object sender, EventArgs e)
         {
+            
 
         }
 

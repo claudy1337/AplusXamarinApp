@@ -28,7 +28,7 @@ DATA BASE
 
 Packages NuGet
 ===========
-- Visual Material  **_xamarin.forms.visual.material** 
+- Visual Material  **_xamarin.forms.visual.material_** 
 - SQL-Lite **_sqlite-net-pcl_** 
 - Google Fonts  **_MaterialIcons-Regular.ttf_** 
 [тык](https://github.com/google/material-design-icons/blob/master/font/MaterialIcons-Regular.ttf)

@@ -8,6 +8,8 @@ using Xamarin.Forms;
 using AplusXamarinApp.Page;
 using AplusXamarinApp.Page.InformationProjectPage;
 using AplusXamarinApp.Page.SecondSprint;
+using AplusXamarinApp.Data;
+using AplusXamarinApp.Models;
 
 namespace AplusXamarinApp
 {
@@ -20,8 +22,11 @@ namespace AplusXamarinApp
 
         private async void BLogin_Clicked(object sender, EventArgs e)
         {
-           await Navigation.PushAsync(new SelectPeojectPage());
            
+
+            await Navigation.PushAsync(new SelectPeojectPage());
+            
+
         }
 
         private async void BRegistration_Clicked(object sender, EventArgs e)

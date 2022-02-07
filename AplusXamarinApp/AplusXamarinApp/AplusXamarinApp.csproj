@@ -37,10 +37,10 @@
     <EmbeddedResource Update="Page\RegistrationPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Page\FirstSprint\ProjectAdd.xaml">
+    <EmbeddedResource Update="Page\SecondSprint\ProjectAdd.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Page\FirstSprint\ProjectEdit.xaml">
+    <EmbeddedResource Update="Page\SecondSprint\ProjectEdit.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Page\SelectedProjectPage.xaml">

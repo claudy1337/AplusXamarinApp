@@ -19,16 +19,6 @@
                            Margin="40, 10, 40, 0"
                            Visual="Material"/>
 
-                <Entry Placeholder="Телефон №2"
-                           Margin="40,30,40,0"
-                           PlaceholderColor="Gray"
-                           TextColor="Gray"
-                           Text="{Binding UserPhoneTwo}"
-                           x:Name="EPhoneTwo"                          
-                           BackgroundColor="#e8e8e8"
-                           HeightRequest="60"
-                           Visual="Material"/>
-
                 <Entry Placeholder="E-mail"
                            Margin="40,30,40,0"
                            PlaceholderColor="Gray"
