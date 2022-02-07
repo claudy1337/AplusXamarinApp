@@ -9,7 +9,7 @@
     <ContentPage.Content>
         <StackLayout>
             <ListView x:Name="LWSelectPeoject" 
-                      ItemsSource="{Binding BPeoject}" 
+                      ItemsSource="{Binding LVProjectsName}" 
                       ItemSelected="LWSelectPeoject_ItemSelected"/>
         </StackLayout>
     </ContentPage.Content>

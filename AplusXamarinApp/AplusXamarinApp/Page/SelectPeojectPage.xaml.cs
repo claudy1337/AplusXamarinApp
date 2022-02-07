@@ -12,11 +12,11 @@ namespace AplusXamarinApp.Page
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SelectPeojectPage : ContentPage
     {
-        public List<string> Projects { get; set; }
+        public List<string> LVProjectsName { get; set; }
         public SelectPeojectPage()
         {
             InitializeComponent();
-            Projects = new List<string>();
+            LVProjectsName = new List<string>();
             FillList();
             this.BindingContext = this;
         }
@@ -29,7 +29,7 @@ namespace AplusXamarinApp.Page
         {
             for (int i = 0; i < 18; i++)
             {
-                Projects.Add($"Проект {i + 1}");
+                LVProjectsName.Add($"Проект {i + 1}");
             }
         }
     }
