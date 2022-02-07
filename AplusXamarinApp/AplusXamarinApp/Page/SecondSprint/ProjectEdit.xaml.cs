@@ -30,5 +30,10 @@ namespace AplusXamarinApp.Page.SecondSprint
         {
 
         }
+
+        private async void TEditingProject_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
     }
 }

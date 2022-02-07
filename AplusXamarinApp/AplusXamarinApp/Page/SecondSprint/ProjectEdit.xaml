@@ -4,6 +4,9 @@
              x:Class="AplusXamarinApp.Page.SecondSprint.ProjectEdit"
              Title="
        Изменить проект">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="Picture/info.png" Priority="0" Order="Primary" x:Name="TEditingProject" Clicked="TEditingProject_Clicked"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
             <StackLayout VerticalOptions="Center" Margin="0, 15, 0, 0">
