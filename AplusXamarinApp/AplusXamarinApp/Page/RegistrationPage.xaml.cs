@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using AplusXamarinApp.Page.SecondSprint;
 
 namespace AplusXamarinApp.Page
 {
@@ -19,7 +20,8 @@ namespace AplusXamarinApp.Page
 
         private async void BRegistration_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PopAsync();
+           // await Navigation.PopAsync();
+            await Navigation.PushAsync(new ProjectAdd());
         }
     }
 }
