@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using AplusXamarinApp.Page;
+using AplusXamarinApp.Page.InformationProjectPage;
 
 namespace AplusXamarinApp
 {
@@ -18,7 +19,7 @@ namespace AplusXamarinApp
 
         private async void BLogin_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new EditProjectPage());
+            await Navigation.PushAsync(new SelectPeojectPage());
         }
 
         private async void BRegistration_Clicked(object sender, EventArgs e)

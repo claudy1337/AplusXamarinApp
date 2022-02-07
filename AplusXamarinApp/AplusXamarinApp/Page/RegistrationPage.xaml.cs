@@ -17,9 +17,9 @@ namespace AplusXamarinApp.Page
             InitializeComponent();
         }
 
-        private void BRegistration_Clicked(object sender, EventArgs e)
+        private async void BRegistration_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PopAsync();
         }
     }
 }
