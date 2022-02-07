@@ -15,7 +15,7 @@
                        WidthRequest="300"/>
             </Frame>
 
-                <StackLayout VerticalOptions="Center" Margin="0, 40, 0, 0">
+                <StackLayout VerticalOptions="Center" Margin="0, 70, 0, 0">
                     <Entry Placeholder="Логин" 
                            PlaceholderColor="Gray"  
                            x:Name="ELogin" 
@@ -23,7 +23,7 @@
                            Text="{Binding UserLogin}"
                            BackgroundColor="#e8e8e8"
                            HeightRequest="60"
-                           Margin="40, 10, 40, 0"
+                           Margin="40, 30, 40, 0"
                            Visual="Material"/>
 
                     <Entry Placeholder="Пароль"
@@ -45,10 +45,10 @@
                         TextColor="White" 
                         x:Name="BRegistration" 
                         Clicked="BRegistration_Clicked"
-                        HeightRequest="49"
+                        HeightRequest="60"
                         WidthRequest="149"
                         FontSize="9"
-                        Margin="0,0,11,0"/>
+                        Margin="0,5,11,0"/>
 
                 <Button Text="Войти" 
                         CornerRadius="200" 
@@ -56,10 +56,10 @@
                         TextColor="White" 
                         x:Name="BLogin" 
                         Clicked="BLogin_Clicked"
-                        HeightRequest="49"
+                        HeightRequest="60"
                         WidthRequest="149"
                         FontSize="9"
-                        Margin="11,0,0,0"/>
+                        Margin="11,5,0,0"/>
             </FlexLayout>
         </StackLayout>
     </FlexLayout>

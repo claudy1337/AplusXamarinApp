@@ -7,38 +7,36 @@
     </ContentPage.ToolbarItems>
     <ScrollView>
         <FlexLayout  Direction="Row" Wrap="Wrap" JustifyContent="SpaceAround">
-            <StackLayout VerticalOptions="End" HorizontalOptions="End" Margin="0, 20, 0, 20">
-                <Image Source="house.png" HeightRequest="150" WidthRequest="150"/>
+            <StackLayout VerticalOptions="End" HorizontalOptions="End">
+                <Image Source="house.png" HeightRequest="150" WidthRequest="170"/>
             </StackLayout>
 
-            <StackLayout VerticalOptions="End" HorizontalOptions="End" Margin="0, 20, 0, 20">
-                <Image Source="house.png" HeightRequest="150" WidthRequest="150"/>
+            <StackLayout VerticalOptions="End" HorizontalOptions="End">
+                <Image Source="house.png" HeightRequest="150" WidthRequest="170"/>
             </StackLayout>
 
-            <StackLayout VerticalOptions="End" HorizontalOptions="End" Margin="0, 20, 0, 20">
-                <Image Source="house.png" HeightRequest="150" WidthRequest="150"/>
+            <StackLayout VerticalOptions="End" HorizontalOptions="End">
+                <Image Source="house.png" HeightRequest="130" WidthRequest="170"/>
             </StackLayout>
 
-
-            <StackLayout VerticalOptions="End" HorizontalOptions="End" Margin="0, 20, 0, 20">
-                <Image Source="house.png" HeightRequest="150" WidthRequest="150"/>
+            <StackLayout VerticalOptions="End" HorizontalOptions="End">
+                <Image Source="house.png" HeightRequest="130" WidthRequest="170"/>
             </StackLayout>
 
-
-            <StackLayout VerticalOptions="End" HorizontalOptions="End" Margin="0, 20, 0, 20">
-                <Image Source="house.png" HeightRequest="150" WidthRequest="150"/>
+            <StackLayout VerticalOptions="End" HorizontalOptions="End">
+                <Image Source="house.png" HeightRequest="130" WidthRequest="170"/>
             </StackLayout>
 
-            <StackLayout VerticalOptions="End" HorizontalOptions="End" Margin="0, 20, 0, 20">
-                <Image Source="house.png" HeightRequest="150" WidthRequest="150"/>
+            <StackLayout VerticalOptions="End" HorizontalOptions="End">
+                <Image Source="house.png" HeightRequest="130" WidthRequest="170"/>
             </StackLayout>
 
-            <StackLayout VerticalOptions="End" HorizontalOptions="End" Margin="0, 20, 0, 20">
-                <Image Source="house.png" HeightRequest="150" WidthRequest="150" Visual="Material"/>
+            <StackLayout VerticalOptions="End" HorizontalOptions="End">
+                <Image Source="house.png" HeightRequest="130" WidthRequest="170"/>
             </StackLayout>
 
-            <StackLayout VerticalOptions="End" HorizontalOptions="End" Margin="0, 20, 0, 20">
-                <Image Source="house.png" HeightRequest="150" WidthRequest="150" Visual="Material"/>
+            <StackLayout VerticalOptions="End" HorizontalOptions="End">
+                <Image Source="house.png" HeightRequest="130" WidthRequest="170"/>
             </StackLayout>
         </FlexLayout>
     </ScrollView>

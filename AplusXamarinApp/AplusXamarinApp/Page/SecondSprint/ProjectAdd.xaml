@@ -9,7 +9,7 @@
         <StackLayout>
             <StackLayout VerticalOptions="Center" Margin="0, 15, 0, 0">
                 <Entry Placeholder="Имя проекта" 
-                           PlaceholderColor="Black"  
+                           PlaceholderColor="Gray"  
                            x:Name="ProjectName" 
                            TextColor="Black"
                            Text="{Binding ProjectName}"
@@ -19,17 +19,17 @@
                            Visual="Material"/>
 
                 <Editor BackgroundColor="#e8e8e" 
-                           HeightRequest="230"
+                           HeightRequest="200"
                            Placeholder="Описание"
                            x:Name="EDTitle" 
                            TextColor="Black"
                            Text="{Binding ProjectTitle}"
-                           PlaceholderColor="Black"
+                           PlaceholderColor="Gray"
                            Margin="40,15, 40, 0"/>
 
                 <Entry Placeholder="Телефон №1"
                            Margin="40,15,40,0"
-                           PlaceholderColor="Black"
+                           PlaceholderColor="Gray"
                            TextColor="Black"
                            Text="{Binding UserPhoneOne}"
                            x:Name="EPhoneOne"                          
@@ -39,7 +39,7 @@
 
                 <Entry Placeholder="E-mail"
                            Margin="40,20,40,0"
-                           PlaceholderColor="Black"
+                           PlaceholderColor="Gray"
                            TextColor="Black"
                            Text="{Binding UserEmail}"
                            x:Name="EEmail"                           
@@ -49,7 +49,7 @@
 
                 <Entry Placeholder="Адресс"
                            Margin="40,15,40,0"
-                           PlaceholderColor="Black"
+                           PlaceholderColor="Gray"
                            TextColor="Black"
                            Text="{Binding UserAddress}"
                            x:Name="EAddress"                          
@@ -58,7 +58,7 @@
                            Visual="Material"/>
             </StackLayout>
 
-            <FlexLayout Direction="Row" JustifyContent="SpaceBetween" Margin="49, 40, 49, 40">
+            <FlexLayout Direction="Row" JustifyContent="SpaceBetween" Margin="49, 65, 49, 40">
                 <Button Text="Отмена" 
                         CornerRadius="200" 
                         BackgroundColor="#00b2ff" 

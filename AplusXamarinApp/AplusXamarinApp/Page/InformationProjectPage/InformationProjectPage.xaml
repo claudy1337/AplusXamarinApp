@@ -8,6 +8,7 @@
     <ContentPage.Content>
         <ScrollView>
             <FlexLayout  Direction="Column" >
+                <Label Text="dfsf" />
                 <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                    In et ultricies orci, in porta sem. Vestibulum in risus iaculis, 
                    porta orci at, bibendum velit. Nam volutpat pulvinar feugiat. 
@@ -48,9 +49,7 @@
                    arcu, nec vulputate nunc massa a ante. Curabitur eu iaculis metus. Aliquam 
                    venenatis iaculis quam. Aliquam ac nibh cursus, aliquam dui id, convallis leo. 
                    Fusce est erat, convallis eget molestie eu, accumsan nec felis."
-                   Margin="20, 30" FontSize="Body"/>
-                
-                
+                   Margin="20, 30" FontSize="Body" TextColor="Black"/>
             </FlexLayout>
         </ScrollView>
     </ContentPage.Content>

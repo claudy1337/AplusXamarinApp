@@ -25,7 +25,7 @@ namespace AplusXamarinApp.Page.InformationProjectPage
 
         private async void TEditing_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage());
+            await Navigation.PushAsync(new ProjectEdit());
         }
 
 

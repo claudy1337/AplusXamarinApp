@@ -35,7 +35,7 @@
 
                 <Entry BackgroundColor="#e8e8e8"
                    Placeholder="Пароль" 
-                   Margin="0,35,0,0" 
+                   Margin="0,35,0,-40" 
                    HeightRequest="60"
                    x:Name="EReturnPassword"
                    IsPassword="True"

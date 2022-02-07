@@ -27,16 +27,22 @@ namespace AplusXamarinApp.Page
             this.BindingContext = this;
         } //TEXT = "&#X"
 
-        private async void LWSelectPeoject_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            await Navigation.PushAsync(new SelectedProjectPage(LWSelectPeoject.SelectedItem.ToString()));
-        }
         public void FillList()
         {
             for (int i = 0; i < 18; i++)
             {
                 LVProjectsName.Add($"Проект {i + 1}");
             }
+        }
+
+        private async void AddProject_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ProjectAdd());
+        }
+
+        private async void LWSelectPeoject_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            await Navigation.PushAsync(new SelectedProjectPage(LWSelectPeoject.SelectedItem.ToString()));
         }
     }
 }

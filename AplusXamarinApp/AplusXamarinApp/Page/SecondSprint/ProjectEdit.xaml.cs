@@ -32,8 +32,12 @@ namespace AplusXamarinApp.Page.SecondSprint
 
         private void BChange_Clicked(object sender, EventArgs e)
         {
-            
-
+            var friend = (User)BindingContext;
+            if (!String.IsNullOrEmpty(friend.UserEmail))
+            {
+                App.Database.SaveItem(friend);
+            }
+            this.Navigation.PopAsync();
         }
 
         private void BRemove_Clicked(object sender, EventArgs e)
