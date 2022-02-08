@@ -26,13 +26,13 @@ DATA BASE
 - В оглавлениях имеются адаптивные и функциональные кнопки с логотипом
 - Редактирование выбранно проекта и сохранине в бд
 
-| User | Project | title |
-|----------------|:---------:|----------------:|
-| IDUser | IDProject | title | 
-| Name | Name | title |
-| Address | Title | title |
-| E-Mail | Picture `Resources` | title |
-| Phone | idUser `userProject` | title |
+| User | Project |
+|----------------|---------:|
+| IDUser | IDProject |
+| Name | Name |
+| Address | Title |
+| E-Mail | Picture `Resources` |
+| Phone | idUser `userProject` |
 
 Packages NuGet
 ===========
