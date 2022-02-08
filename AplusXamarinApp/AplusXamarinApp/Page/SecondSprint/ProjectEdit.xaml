@@ -37,7 +37,7 @@
                            BackgroundColor="#e8e8e8"
                            HeightRequest="55"
                            Visual="Material"/>
-                
+
                 <Entry Placeholder="E-mail"
                            Margin="40,20,40,0"
                            PlaceholderColor="Gray"
@@ -57,10 +57,8 @@
                            BackgroundColor="#e8e8e8"
                            HeightRequest="55"
                            Visual="Material"/>
-            </StackLayout>
-
-            <FlexLayout Direction="Row" JustifyContent="SpaceBetween" Margin="49, 100, 49, 0">
-                <Button Text="Отмена" 
+                <FlexLayout Direction="Row" JustifyContent="SpaceBetween" HorizontalOptions="Center">
+                    <Button Text="Отмена" 
                         CornerRadius="200" 
                         BackgroundColor="#00b2ff" 
                         TextColor="White" 
@@ -71,7 +69,7 @@
                         FontSize="15"
                         VerticalOptions="End"/>
 
-                <Button Text="Изменить" 
+                    <Button Text="Изменить" 
                         CornerRadius="200" 
                         BackgroundColor="#00b2ff" 
                         TextColor="White" 
@@ -82,7 +80,8 @@
                         WidthRequest="149"
                         FontSize="15"
                         Margin="11,0,0,0"/>
-            </FlexLayout>
+                </FlexLayout>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

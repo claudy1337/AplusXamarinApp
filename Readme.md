@@ -26,6 +26,14 @@ DATA BASE
 - В оглавлениях имеются адаптивные и функциональные кнопки с логотипом
 - Редактирование выбранно проекта и сохранине в бд
 
+| User | Project | 
+|----------------|:---------:|----------------:|
+| IDUser | IDProject | 
+| Name | Name |
+| Address | Title |
+| E-Mail | Picture `Resources` |
+| Phone | idUser `userProject` |
+
 Packages NuGet
 ===========
 - Visual Material  **_xamarin.forms.visual.material_** 
