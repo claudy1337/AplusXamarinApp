@@ -11,6 +11,8 @@ using AplusXamarinApp.Page.InformationProjectPage;
 using AplusXamarinApp.Page.SecondSprint;
 using AplusXamarinApp.Page;
 using AplusXamarinApp;
+using AplusXamarinApp.Models;
+using AplusXamarinApp.Data;
 
 
 
@@ -31,7 +33,7 @@ namespace AplusXamarinApp.Page.SecondSprint
 
         private void BAddProjece_Clicked(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
