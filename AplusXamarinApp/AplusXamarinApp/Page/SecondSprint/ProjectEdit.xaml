@@ -57,7 +57,7 @@
                            BackgroundColor="#e8e8e8"
                            HeightRequest="55"
                            Visual="Material"/>
-                <FlexLayout Direction="Row" JustifyContent="SpaceBetween" HorizontalOptions="Center">
+                <FlexLayout Direction="Row" JustifyContent="Center" HorizontalOptions="Center">
                     <Button Text="Отмена" 
                         CornerRadius="200" 
                         BackgroundColor="#00b2ff" 
@@ -67,7 +67,8 @@
                         HeightRequest="49"
                         WidthRequest="149"
                         FontSize="15"
-                        VerticalOptions="End"/>
+                        VerticalOptions="End"
+                        Margin="0, 30, 10, 0"/>
 
                     <Button Text="Изменить" 
                         CornerRadius="200" 
@@ -79,7 +80,7 @@
                         HeightRequest="49"
                         WidthRequest="149"
                         FontSize="15"
-                        Margin="11,0,0,0"/>
+                        Margin="0, 30, 11, 0"/>
                 </FlexLayout>
             </StackLayout>
         </StackLayout>

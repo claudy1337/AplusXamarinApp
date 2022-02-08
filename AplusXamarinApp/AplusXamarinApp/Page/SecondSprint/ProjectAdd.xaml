@@ -55,7 +55,7 @@
                            BackgroundColor="#e8e8e8"
                            HeightRequest="60"
                            Visual="Material"/>
-                <FlexLayout Direction="RowReverse"  JustifyContent="SpaceBetween" HorizontalOptions="Center">
+                <FlexLayout Direction="RowReverse"  JustifyContent="Center" HorizontalOptions="Center">
                     <Button Text="Отмена" 
                         CornerRadius="200" 
                         BackgroundColor="#00b2ff" 
@@ -64,7 +64,8 @@
                         Clicked="BRemove_Clicked"
                         HeightRequest="49"
                         WidthRequest="149"
-                        FontSize="15"/>
+                        FontSize="15"
+                        Margin="0, 30, 10, 0"/>
 
                     <Button Text="Добавить" 
                         CornerRadius="200" 
@@ -74,7 +75,8 @@
                         Clicked="BAddProjece_Clicked"
                         HeightRequest="49"
                         WidthRequest="149"
-                        FontSize="15"/>
+                        FontSize="15"
+                        Margin="0, 30, 11, 0"/>
                 </FlexLayout>
             </StackLayout>
         </StackLayout>
