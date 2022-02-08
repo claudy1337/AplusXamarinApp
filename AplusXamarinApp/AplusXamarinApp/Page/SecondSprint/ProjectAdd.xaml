@@ -18,14 +18,13 @@
                            Margin="40, 7, 40, 0"
                            Visual="Material"/>
 
-                <Editor BackgroundColor="#e8e8e" 
-                           HeightRequest="200"
+                <Editor HeightRequest="200"
                            Placeholder="Описание"
                            x:Name="EDTitle" 
                            TextColor="Black"
                            Text="{Binding ProjectTitle}"
-                           PlaceholderColor="Gray"
-                           Margin="40,15, 40, 0"/>
+                           Margin="40,15, 40, 0"
+                           BackgroundColor="#e8e8e8"/>
 
                 <Entry Placeholder="Телефон №1"
                            Margin="40,15,40,0"
