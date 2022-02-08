@@ -11,9 +11,9 @@
 
                 <Entry Placeholder="Имя проекта" 
                            PlaceholderColor="Gray"  
-                           x:Name="ProjectName" 
+                           x:Name="UserName" 
                            TextColor="Black"
-                           Text="{Binding ProjectName}"
+                           Text="{Binding UserName}"
                            BackgroundColor="#e8e8e8"
                            HeightRequest="60"
                            Margin="40, 7, 40, 0"

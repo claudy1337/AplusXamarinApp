@@ -33,6 +33,11 @@ namespace AplusXamarinApp.Page.SecondSprint
 
         private void BAddProjece_Clicked(object sender, EventArgs e)
         {
+            var friend = (User)BindingContext;
+            if (!String.IsNullOrEmpty(friend.UserName))
+            {
+                App.Database.SaveItem(friend);
+            }
             
         }
     }

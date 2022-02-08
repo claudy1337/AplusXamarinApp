@@ -24,11 +24,7 @@ namespace AplusXamarinApp.Page.SecondSprint
             InitializeComponent();
            
         }
-        protected override void OnAppearing()
-        {
-            EPhoneOne.Text = App.Database.ToString();
-            base.OnAppearing();
-        }
+       
 
         private void BChange_Clicked(object sender, EventArgs e)
         {

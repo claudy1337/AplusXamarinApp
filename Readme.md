@@ -52,6 +52,9 @@ author
 травканутый#0001
 ```
 
+donation
+===========
 
+![alt text](https://yandex.ru/images/search?text=котики&from=tabbar&pos=5&img_url=https%3A%2F%2Fscontent-arn2-2.cdninstagram.com%2Fv%2Ft51.2885-15%2Fe35%2F21296320_305169406625144_7778268562845597696_n.jpg%3F_nc_ht%3Dscontent-arn2-2.cdninstagram.com%26_nc_cat%3D108%26_nc_ohc%3DPeqNBIq5I6sAX_ZC0VK%26oh%3Dd9f62b3b7b10f31ed67160b7fd3c187b%26oe%3D5E83EAEB&rpt=simage)
 
 
