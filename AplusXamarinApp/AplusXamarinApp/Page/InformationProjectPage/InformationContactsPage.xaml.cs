@@ -28,9 +28,18 @@ namespace AplusXamarinApp.Page.InformationProjectPage
 
         private async void TEditingContacts_Clicked(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync(new ProjectEdit());
-            await Navigation.PushAsync(new ProjectEdit());   
+            
+
+            User friend = new User();
+            ProjectAdd friendPage = new ProjectAdd();
+            friendPage.BindingContext = friend;
+            await Navigation.PushAsync(new InformationContactsPage());
         }
-       
+        protected override void OnAppearing()
+        {
+            EPhoneOne.Text = App.database.ToString();
+            base.OnAppearing();
+        }
+
     }
 }

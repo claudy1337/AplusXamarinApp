@@ -9,6 +9,7 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout VerticalOptions="Center" Margin="0, 40, 0, 0">
+
                 <Entry Placeholder="Телефон №1" 
                            PlaceholderColor="Gray"  
                            x:Name="EPhoneOne" 
@@ -19,7 +20,6 @@
                            Margin="40, 10, 40, 0"
                            Visual="Material"
                            IsReadOnly="True"/>
-
                 <Entry Placeholder="E-mail"
                            Margin="40,30,40,0"
                            PlaceholderColor="Gray"
