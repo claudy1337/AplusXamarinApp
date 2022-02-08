@@ -51,6 +51,7 @@ namespace AplusXamarinApp.Page.SecondSprint
             bool result = await DisplayAlert("Подтвердить действие", $"Вы точно хотите удалить ?", "Да", "Нет");
             await DisplayAlert("Уведомление", "Вы выбрали: " + (result ? "Удалить" : "Отменить"), "OK");
             //await Navigation.PushAsync(new MainPage());
+
         }
     }
 }
