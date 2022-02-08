@@ -42,7 +42,6 @@
                            Visual="Material"
                            IsReadOnly="True"/>
             </StackLayout>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

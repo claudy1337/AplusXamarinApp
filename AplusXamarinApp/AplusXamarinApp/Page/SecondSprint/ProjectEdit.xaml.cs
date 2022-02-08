@@ -37,19 +37,18 @@ namespace AplusXamarinApp.Page.SecondSprint
             {
                 App.Database.SaveItem(friend);
             }
-            this.Navigation.PopAsync();
+            
         }
 
-        private void BRemove_Clicked(object sender, EventArgs e)
+        private async void BRemove_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PopAsync();
         }
 
         private async void TEditingProject_Clicked(object sender, EventArgs e)
         {
            
             bool result = await DisplayAlert("Подтвердить действие", $"Вы точно хотите удалить ?", "Да", "Нет");
-            await DisplayAlert("Уведомление", "Вы выбрали: " + (result ? "Удалить" : "Отменить"), "OK");
             //await Navigation.PushAsync(new MainPage());
 
         }

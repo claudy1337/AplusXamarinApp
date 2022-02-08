@@ -26,7 +26,7 @@ namespace AplusXamarinApp.Page.SecondSprint
 
         private async void BRemove_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SelectPeojectPage());
+            await Navigation.PopAsync();
         }
 
         private void BAddProjece_Clicked(object sender, EventArgs e)
