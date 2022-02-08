@@ -55,6 +55,6 @@ author
 donation
 ===========
 
-![img](https://wampi.ru/image/RkMyFvY)
+![cats](https://greatanimalwallpapers.com/images/2019/09/Cat-On-A-Carpet-HD-1920x1200.jpg)
 
 
