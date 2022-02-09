@@ -7,16 +7,16 @@ AplusXamarinApp
 SelectPeojectPage
 ===========
 **ListView/ItemSelected**
-> > В информации каждой страницы был предусмотрен список List **LVProjectsName** для возможного сокращения эллементов интерфейса
-> > В оглавлении каждой страницы добавлена адаптивная кнопка для перехода редактирования страницы _Pluss/Title_
+> > В информации каждой страницы был предусмотрен список List `**LVProjectsName**` для возможного сокращения эллементов интерфейса
+> > В оглавлении каждой страницы добавлена адаптивная кнопка для перехода редактирования страницы `_Pluss/Title_`
 
 Add and Edit ProjectPage
 ===========
 **SecondSprint**
 - Добавлены новые страницы с редактированием и добавлением нового проекта 
 - В каждое поле для заполнения имеет своиство *Binding* и может быть записанно в бд
-- InformationPage/EditProjectPage 
-- SelectPeojectPage/AddProjectAdd
+- `InformationPage/EditProjectPage` 
+- `SelectPeojectPage/AddProjectAdd`
 
 DATA BASE
 ===========

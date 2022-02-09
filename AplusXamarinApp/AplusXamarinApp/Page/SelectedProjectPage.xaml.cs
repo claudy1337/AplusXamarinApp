@@ -11,6 +11,8 @@ using AplusXamarinApp.Page.InformationProjectPage;
 using AplusXamarinApp.Page.SecondSprint;
 using AplusXamarinApp.Page;
 using AplusXamarinApp;
+using AplusXamarinApp.transfer;
+
 
 
 namespace AplusXamarinApp.Page
@@ -22,6 +24,9 @@ namespace AplusXamarinApp.Page
         {
             InitializeComponent();
             Title = projects;
+            GiveTitleProject.PTitle = projects;
+
         }
     }
+    
 }

@@ -37,8 +37,7 @@ namespace AplusXamarinApp.Page.InformationProjectPage
 
         protected override void OnAppearing()
         {
-            friendsList.ItemsSource = App.Database.GetItems();
-            base.OnAppearing();
+            
         }
 
         private async void friendsList_ItemSelected(object sender, SelectedItemChangedEventArgs e)

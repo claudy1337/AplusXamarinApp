@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="classes\" />
     <Folder Include="Picture\" />
   </ItemGroup>
 

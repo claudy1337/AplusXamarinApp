@@ -13,6 +13,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using AplusXamarinApp.Models;
 using AplusXamarinApp.Data;
+using AplusXamarinApp.transfer;
 
 namespace AplusXamarinApp.Page.SecondSprint
 {
@@ -24,29 +25,35 @@ namespace AplusXamarinApp.Page.SecondSprint
             InitializeComponent();
            
         }
-       
+        string titles = GiveTitleProject.PTitle;
 
-        private void BChange_Clicked(object sender, EventArgs e)
+        private async void BChange_Clicked(object sender, EventArgs e)
         {
-            var friend = (User)BindingContext;
-            if (!String.IsNullOrEmpty(friend.UserEmail))
-            {
-                App.Database.SaveItem(friend);
-            }
             
+            bool result = await DisplayAlert("Подтвердить действие", $"Вы точно хотите изменить {titles} ?", "Да", "Нет");
+           // if (result == true) { await Navigation.PushAsync(new InformationProjectPage()); }
+            //var friend = (User)BindingContext;
+            //if (!String.IsNullOrEmpty(friend.UserEmail))
+            //{
+            //    App.Database.SaveItem(friend);
+            //}
+
         }
 
         private async void BRemove_Clicked(object sender, EventArgs e)
         {
+
             await Navigation.PopAsync();
+            
         }
 
         private async void TEditingProject_Clicked(object sender, EventArgs e)
         {
            
-            bool result = await DisplayAlert("Подтвердить действие", $"Вы точно хотите удалить ?", "Да", "Нет");
+            bool result = await DisplayAlert("Подтвердить действие", $"Вы точно хотите удалить {titles}?", "Да", "Нет");
+            if(result == true ) { await Navigation.PushAsync(new MainPage()); }
+            else { await Navigation.PopAsync(); }
             //await Navigation.PushAsync(new MainPage());
-
         }
     }
 }
