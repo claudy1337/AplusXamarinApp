@@ -13,6 +13,7 @@ using AplusXamarinApp.Page;
 using AplusXamarinApp;
 using AplusXamarinApp.Data;
 using AplusXamarinApp.Models;
+using AplusXamarinApp.transfer;
 
 
 
@@ -24,14 +25,20 @@ namespace AplusXamarinApp.Page.InformationProjectPage
         public InformationContactsPage()
         {
             InitializeComponent();
+            EPhoneOne.Text = "88000";
+            EEmail.Text = "mail@mail.ru";
+            EAddress.Text = "Galeeva 3";
+            SendInfornmation();
         }
 
         private async void TEditingContacts_Clicked(object sender, EventArgs e)
         {
+
+            SendInfornmation();
             User friend = new User();
-            ProjectAdd friendPage = new ProjectAdd();
+            ProjectEdit friendPage = new ProjectEdit();
             friendPage.BindingContext = friend;
-            await Navigation.PushAsync(friendPage);
+            await Navigation.PushAsync(new ProjectEdit());
 
         }
 
@@ -46,6 +53,12 @@ namespace AplusXamarinApp.Page.InformationProjectPage
             ProjectAdd friendPage = new ProjectAdd();
             friendPage.BindingContext = selectedFriend;
             await Navigation.PushAsync(friendPage);
+        }
+        public void SendInfornmation()
+        {
+            GiveTitleProject.Address = EAddress.Text;
+            GiveTitleProject.Email = EEmail.Text;
+            GiveTitleProject.Number = EPhoneOne.Text;
         }
     }
 }

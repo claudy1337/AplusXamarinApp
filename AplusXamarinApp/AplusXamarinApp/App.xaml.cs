@@ -11,25 +11,41 @@ namespace AplusXamarinApp
     public partial class App : Application
     {
         public const string DATABASE_NAME = "user.db";
-        internal static UserBD database;
+        public const string PDATABASE_NAME = "project.db";
+        internal static UserBD Userdatabase;
+        internal static ProjectBD Projectdatabase;
         internal static UserBD Database
         {
             get
             {
-                if(database == null)
+                if(Userdatabase == null)
                 {
-                    database = new UserBD(
+                    Userdatabase = new UserBD(
                         Path.Combine(
                             Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), DATABASE_NAME));
 
                 }
-                return database;
+                return Userdatabase;
             }
         }
+        internal static ProjectBD PDatabase
+        {
+            get
+            {
+                if (Projectdatabase == null)
+                {
+                    Projectdatabase = new ProjectBD(
+                        Path.Combine(
+                            Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), PDATABASE_NAME));
+
+                }
+                return Projectdatabase;
+            }
+        }
+        
         public App()
         {
             InitializeComponent();
-
             MainPage = new NavigationPage(new MainPage());
         }
 
