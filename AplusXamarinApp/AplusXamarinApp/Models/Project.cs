@@ -6,11 +6,15 @@ namespace AplusXamarinApp.Models
     internal class Project
     {
             [PrimaryKey, AutoIncrement, Column("_id")]
-            public int Id { get; set; }
+        [Unique]
+        public int Id { get; set; }
             public string ProjectName { get; set; }
             public string ProjectTitle { get; set; }
             public string ProjectPicture { get; set; }
-            public int idUser { get; set; }
+            public string ProjectEmail { get; set; }
+            public string ProjectAddress { get; set; }
+            public string ProjectPhone { get; set; }
+            
         
     }
 }

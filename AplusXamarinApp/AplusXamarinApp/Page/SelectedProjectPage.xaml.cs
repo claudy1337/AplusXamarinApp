@@ -20,12 +20,10 @@ namespace AplusXamarinApp.Page
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SelectedProjectPage : TabbedPage
     {
-        public SelectedProjectPage(string projects)
+        public SelectedProjectPage()
         {
             InitializeComponent();
-            Title = projects;
-            GiveTitleProject.PTitle = projects;
-
+            
         }
     }
     

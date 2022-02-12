@@ -24,30 +24,16 @@ namespace AplusXamarinApp.Page.InformationProjectPage
         public InformationProjectPage()
         {
             InitializeComponent();
-           
-           
         }
 
         private async void TEditing_Clicked(object sender, EventArgs e)
         {
-            User friend = new User();
-            ProjectEdit friendPage = new ProjectEdit();
-            friendPage.BindingContext = friend;
             await Navigation.PushAsync(new ProjectEdit());
-            
         }
         protected override void OnAppearing()
         {
-            friendsList.ItemsSource = App.Database.GetItems();
-            base.OnAppearing();
+            
         }
 
-        private async void friendsList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            User selectedFriend = (User)e.SelectedItem;
-            ProjectEdit friendPage = new ProjectEdit();
-            friendPage.BindingContext = selectedFriend;
-            await Navigation.PushAsync(friendPage);
-        }
     }
 }

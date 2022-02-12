@@ -34,15 +34,9 @@ namespace AplusXamarinApp.Page.SecondSprint
         string ProjectContent = GiveTitleProject.Content;
         private async void BChange_Clicked(object sender, EventArgs e)
         {
-            
-            //bool result = await DisplayAlert("Подтвердить действие", $"Вы точно хотите изменить {titles} ?", "Да", "Нет");
-            //var friend = (Project)BindingContext;
-            //if (!String.IsNullOrEmpty(friend.ProjectTitle))
-            //{
-            //    App.PDatabase.SaveItem(friend);
-            //}
-
-            //this.Navigation.PopAsync();
+            bool result = await DisplayAlert("Подтвердить действие", $"Вы точно хотите изменить {titles} ?", "Да", "Нет");
+            if (result == true) { this.Navigation.PopAsync(); }
+           
         }
 
         private async void BRemove_Clicked(object sender, EventArgs e)
@@ -56,11 +50,9 @@ namespace AplusXamarinApp.Page.SecondSprint
         {
            
             bool result = await DisplayAlert("Подтвердить действие", $"Вы точно хотите удалить {titles}?", "Да", "Нет");
+            if (result==true){ this.Navigation.PushAsync(new SelectPeojectPage()); }
+                
             
-                //var friend = (Project)BindingContext;
-                //App.Database.DeleteItem(friend.Id);
-                this.Navigation.PushAsync(new SelectPeojectPage());
-            //await Navigation.PushAsync(new MainPage());
         }
     }
 }

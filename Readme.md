@@ -26,14 +26,16 @@ DATA BASE
 - Добавленно всплывающее уведомление при изменении проекта `_EditPage_`
 - В оглавлениях имеются адаптивные и функциональные кнопки с логотипом
 - Редактирование выбранно проекта и сохранине в бд
-
+- Проект привязывается к каждому пользователю `в разработке`
 | User | Project |
-|----------------|---------:|
+|----------------|:---------:|
 | IDUser | IDProject |
 | Name | Name |
-| Address | Title |
-| E-Mail | Picture `Resources` |
-| Phone | idUser `userProject` |
+| Login | Title |
+| Password | Picture `Resources` |
+| IDProject | Email |
+		| Address |
+		| Phone |
 
 Packages NuGet
 ===========

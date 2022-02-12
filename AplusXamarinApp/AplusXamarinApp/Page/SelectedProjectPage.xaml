@@ -2,7 +2,8 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AplusXamarinApp.Page.InformationProjectPage"
-             x:Class="AplusXamarinApp.Page.SelectedProjectPage">
+             x:Class="AplusXamarinApp.Page.SelectedProjectPage"
+            Title="{Binding ProjectName}">
     <TabbedPage.Children>
         <local:InformationProjectPage Title="О проекте"/>
         <local:InformationImagesPage Title="Картинки"/>

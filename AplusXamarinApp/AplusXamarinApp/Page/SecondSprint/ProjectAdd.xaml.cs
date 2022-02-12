@@ -22,25 +22,29 @@ namespace AplusXamarinApp.Page.SecondSprint
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProjectAdd : ContentPage
     {
-        private User _user;
-        private UserBD _userbd;
         public ProjectAdd()
         {
             InitializeComponent();
         }
-        string titles = GiveTitleProject.PTitle;
+        
         private async void BRemove_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
         }
-
-        
         private async void BAddProjece_Clicked(object sender, EventArgs e)
         {
-
-            bool result = await DisplayAlert("Подтвердить действие", $"Вы точно хотите добавить {titles}?", "Да", "Нет");
-            await Navigation.PopAsync();
-
+            bool result = await DisplayAlert("Подтвердить действие", $"Вы точно хотите добавить {ProjectName.Text}?", "Да", "Нет");
+            if (result==true) {
+                Project project = new Project();
+                project.ProjectName = ProjectName.Text;
+                project.ProjectTitle = EDTitle.Text;
+                project.ProjectEmail = EEmail.Text;
+                project.ProjectPhone = EPhoneOne.Text;
+                project.ProjectAddress = EAddress.Text;
+                App.Db.SaveItem(project);
+                Navigation.PopAsync();
+            }
+            
         }
     }
 }

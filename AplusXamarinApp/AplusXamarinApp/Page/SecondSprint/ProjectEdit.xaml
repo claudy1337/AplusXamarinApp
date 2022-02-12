@@ -57,6 +57,7 @@
                            BackgroundColor="#e8e8e8"
                            HeightRequest="55"
                            Visual="Material"/>
+                
                 <FlexLayout Direction="Row" JustifyContent="Center" HorizontalOptions="Center">
                     <Button Text="Отмена" 
                         CornerRadius="200" 
@@ -75,8 +76,7 @@
                         BackgroundColor="#00b2ff" 
                         TextColor="White" 
                         x:Name="BChange" 
-                        Clicked="BChange_Clicked"
-                       
+                        Clicked="BChange_Clicked"                      
                         HeightRequest="49"
                         WidthRequest="149"
                         FontSize="15"

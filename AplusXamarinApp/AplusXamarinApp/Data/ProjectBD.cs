@@ -13,35 +13,39 @@ namespace AplusXamarinApp.Data
 {
     internal class ProjectBD
     {
-        SQLiteConnection database;
-        public ProjectBD(string databasePath)
+        SQLiteConnection db;
+        public ProjectBD(string dbPath)
         {
-            database = new SQLiteConnection(databasePath);
-            database.CreateTable<Project>();
+            db = new SQLiteConnection(dbPath);
+            db.CreateTable<Project>();
         }
+
+        public IEnumerable<Project> GetItems()
+        {
+            return db.Table<Project>().ToList();
+        }
+
         public Project GetItem(int id)
         {
-            return database.Get<Project>(id);
+            return db.Get<Project>(id);
         }
+
         public int DeleteItem(int id)
         {
-            return database.Delete<Project>(id);
+            return db.Delete<Project>(id);
         }
+
         public int SaveItem(Project item)
         {
             if (item.Id != 0)
             {
-                database.Update(item);
+                db.Update(item);
                 return item.Id;
             }
             else
             {
-                return database.Insert(item);
+                return db.Insert(item);
             }
-        }
-        public IEnumerable<Project> GetItems()
-        {
-            return database.Table<Project>().ToList();
         }
     }
 }
