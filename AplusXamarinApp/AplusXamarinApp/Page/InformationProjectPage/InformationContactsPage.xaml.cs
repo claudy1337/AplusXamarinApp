@@ -26,21 +26,5 @@ namespace AplusXamarinApp.Page.InformationProjectPage
         {
             InitializeComponent();
         }
-
-        private async void TEditingContacts_Clicked(object sender, EventArgs e)
-        {
-           await Navigation.PushAsync(new ProjectEdit());
-        }
-
-        protected override void OnAppearing()
-        {
-            
-        }
-        //public void SendInfornmation()
-        //{
-        //    GiveTitleProject.Address = EAddress.Text;
-        //    GiveTitleProject.Email = EEmail.Text;
-        //    GiveTitleProject.Number = EPhoneOne.Text;
-        //}
     }
 }

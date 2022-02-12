@@ -8,7 +8,6 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout VerticalOptions="Center" Margin="0, 15, 0, 0" >
-
                 <Entry Placeholder="Имя проекта" 
                            PlaceholderColor="Gray"  
                            x:Name="ProjectName" 

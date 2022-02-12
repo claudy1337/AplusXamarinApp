@@ -40,7 +40,7 @@
                    x:Name="EReturnPassword"
                    IsPassword="True"
                    Visual="Material"/>
-                
+
             </StackLayout>
 
             <StackLayout Margin="0,204,0,0">
@@ -52,6 +52,5 @@
                         TextColor="White"/>
             </StackLayout>
         </FlexLayout>
-        
     </ContentPage.Content>
 </ContentPage>

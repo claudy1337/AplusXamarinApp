@@ -12,7 +12,8 @@ using AplusXamarinApp.Page.SecondSprint;
 using AplusXamarinApp.Page;
 using AplusXamarinApp;
 using AplusXamarinApp.transfer;
-
+using AplusXamarinApp.Models;
+using AplusXamarinApp.Data;
 
 
 namespace AplusXamarinApp.Page
@@ -24,6 +25,14 @@ namespace AplusXamarinApp.Page
         {
             InitializeComponent();
             
+        }
+
+        private async void TEditing_Clicked(object sender, EventArgs e)
+        {
+            var project = (Project)BindingContext;
+            ProjectEdit projectPage = new ProjectEdit();
+            projectPage.BindingContext = project;
+            await Navigation.PushAsync(projectPage);
         }
     }
     

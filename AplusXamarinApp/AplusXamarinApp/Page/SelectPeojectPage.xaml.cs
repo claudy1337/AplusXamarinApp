@@ -27,8 +27,6 @@ namespace AplusXamarinApp.Page
             InitializeComponent();
             
         } //TEXT = "&#X"
-
-        
         private async void AddProject_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ProjectAdd());

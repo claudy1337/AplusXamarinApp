@@ -23,10 +23,5 @@ namespace AplusXamarinApp.Page.InformationProjectPage
         {
             InitializeComponent();
         }
-
-        private async void TEditingProjectImages_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ProjectEdit());
-        }
     }
 }

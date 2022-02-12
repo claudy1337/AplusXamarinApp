@@ -4,6 +4,10 @@
              xmlns:local="clr-namespace:AplusXamarinApp.Page.InformationProjectPage"
              x:Class="AplusXamarinApp.Page.SelectedProjectPage"
             Title="{Binding ProjectName}">
+    
+        <TabbedPage.ToolbarItems>
+            <ToolbarItem IconImageSource="pencil.png" Priority="0" Order="Primary" x:Name="TEditing" Clicked="TEditing_Clicked"/>
+        </TabbedPage.ToolbarItems>
     <TabbedPage.Children>
         <local:InformationProjectPage Title="О проекте"/>
         <local:InformationImagesPage Title="Картинки"/>

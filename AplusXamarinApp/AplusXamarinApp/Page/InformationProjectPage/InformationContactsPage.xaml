@@ -3,10 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AplusXamarinApp.Page.InformationProjectPage.InformationContactsPage"
              Visual="Default">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem IconImageSource="pencil.png" Priority="0" Order="Primary" x:Name="TEditingContacts" Clicked="TEditingContacts_Clicked"/>
-    </ContentPage.ToolbarItems>
     <ContentPage.Content>
+        
 
         <StackLayout>
             <StackLayout VerticalOptions="Center" Margin="0, 40, 0, 0">

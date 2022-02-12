@@ -24,35 +24,34 @@ namespace AplusXamarinApp.Page.SecondSprint
         public ProjectEdit()
         {
             InitializeComponent();
-            EPhoneOne.Text = GiveTitleProject.Number;
-            EEmail.Text = GiveTitleProject.Email;
-            EAddress.Text = GiveTitleProject.Address;
-            ProjectName.Text = GiveTitleProject.PTitle;
-            
         }
-        string titles = GiveTitleProject.PTitle;
-        string ProjectContent = GiveTitleProject.Content;
+        
         private async void BChange_Clicked(object sender, EventArgs e)
         {
-            bool result = await DisplayAlert("Подтвердить действие", $"Вы точно хотите изменить {titles} ?", "Да", "Нет");
-            if (result == true) { this.Navigation.PopAsync(); }
-           
+            var project = (Project)BindingContext;
+            if (await DisplayAlert(" ", $"Вы хотите изменить {project.ProjectName}?", "Изменить", "Отмена"))
+            {
+                if (!String.IsNullOrEmpty(project.ProjectName))
+                {
+                    App.Db.SaveItem(project);
+                }
+                await this.Navigation.PopAsync();
+            }
         }
 
         private async void BRemove_Clicked(object sender, EventArgs e)
         {
-
-            await Navigation.PopAsync();
-            
+            await Navigation.PopAsync();  
         }
 
         private async void TEditingProject_Clicked(object sender, EventArgs e)
         {
-           
-            bool result = await DisplayAlert("Подтвердить действие", $"Вы точно хотите удалить {titles}?", "Да", "Нет");
-            if (result==true){ this.Navigation.PushAsync(new SelectPeojectPage()); }
-                
-            
+            var project = (Project)BindingContext;
+            if (await DisplayAlert(" ", $"Вы точно хотите удалить {project.ProjectName}?", "Удалить", "Отмена"))
+            {
+                App.Db.DeleteItem(project.Id);
+                await Navigation.PushAsync(new SelectedProjectPage());
+            }
         }
     }
 }
