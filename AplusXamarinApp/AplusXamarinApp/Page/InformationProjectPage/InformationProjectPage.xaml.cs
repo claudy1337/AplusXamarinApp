@@ -11,6 +11,9 @@ using AplusXamarinApp.Page.InformationProjectPage;
 using AplusXamarinApp.Page.SecondSprint;
 using AplusXamarinApp.Page;
 using AplusXamarinApp;
+using AplusXamarinApp.Data;
+using AplusXamarinApp.Models;
+using AplusXamarinApp.transfer;
 
 
 namespace AplusXamarinApp.Page.InformationProjectPage
@@ -22,12 +25,5 @@ namespace AplusXamarinApp.Page.InformationProjectPage
         {
             InitializeComponent();
         }
-
-        private async void TEditing_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ProjectEdit());
-        }
-
-
     }
 }

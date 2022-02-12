@@ -25,8 +25,7 @@ namespace AplusXamarinApp.Page
 
         private async void BRegistration_Clicked(object sender, EventArgs e)
         {
-           // await Navigation.PopAsync();
-            await Navigation.PushAsync(new ProjectAdd());
+            await Navigation.PopAsync();
         }
     }
 }

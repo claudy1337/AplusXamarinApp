@@ -11,6 +11,9 @@ using AplusXamarinApp.Page.InformationProjectPage;
 using AplusXamarinApp.Page.SecondSprint;
 using AplusXamarinApp.Page;
 using AplusXamarinApp;
+using AplusXamarinApp.transfer;
+using AplusXamarinApp.Data;
+using AplusXamarinApp.Models;
 
 
 namespace AplusXamarinApp.Page
@@ -22,27 +25,28 @@ namespace AplusXamarinApp.Page
         public SelectPeojectPage()
         {
             InitializeComponent();
-            LVProjectsName = new List<string>();
-            FillList();
-            this.BindingContext = this;
+            
         } //TEXT = "&#X"
-
-        public void FillList()
-        {
-            for (int i = 0; i < 18; i++)
-            {
-                LVProjectsName.Add($"Проект {i + 1}");
-            }
-        }
-
         private async void AddProject_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ProjectAdd());
         }
-
-        private async void LWSelectPeoject_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        protected override void OnAppearing()
         {
-            await Navigation.PushAsync(new SelectedProjectPage(LWSelectPeoject.SelectedItem.ToString()));
+            LVProject.ItemsSource = App.Db.GetItems();
+            base.OnAppearing();
+        }
+        private void UpdateList()
+        {
+            LVProject.ItemsSource = App.Db.GetItems();
+        }
+
+        private async void LVProject_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            Project selectedProject = (Project)e.SelectedItem;
+            SelectedProjectPage selectedProjectPage = new SelectedProjectPage();
+            selectedProjectPage.BindingContext = selectedProject;
+            await Navigation.PushAsync(selectedProjectPage);
         }
     }
 }

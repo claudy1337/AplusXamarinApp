@@ -13,6 +13,7 @@ using AplusXamarinApp.Page;
 using AplusXamarinApp;
 using AplusXamarinApp.Data;
 using AplusXamarinApp.Models;
+using AplusXamarinApp.transfer;
 
 
 
@@ -25,12 +26,5 @@ namespace AplusXamarinApp.Page.InformationProjectPage
         {
             InitializeComponent();
         }
-
-        private async void TEditingContacts_Clicked(object sender, EventArgs e)
-        {
-            //await Navigation.PushAsync(new ProjectEdit());
-            await Navigation.PushAsync(new ProjectEdit());   
-        }
-       
     }
 }

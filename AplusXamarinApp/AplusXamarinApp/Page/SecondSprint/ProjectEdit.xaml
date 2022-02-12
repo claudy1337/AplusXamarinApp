@@ -32,17 +32,17 @@
                            Margin="40,15,40,0"
                            PlaceholderColor="Gray"
                            TextColor="Black"
-                           Text="{Binding UserPhoneOne}"
+                           Text="{Binding ProjectPhone}"
                            x:Name="EPhoneOne"                          
                            BackgroundColor="#e8e8e8"
                            HeightRequest="55"
                            Visual="Material"/>
-                
+
                 <Entry Placeholder="E-mail"
                            Margin="40,20,40,0"
                            PlaceholderColor="Gray"
                            TextColor="Black"
-                           Text="{Binding UserEmail}"
+                           Text="{Binding ProjectEmail}"
                            x:Name="EEmail"                           
                            BackgroundColor="#e8e8e8"
                            HeightRequest="55"
@@ -52,15 +52,14 @@
                            Margin="40,15,40,0"
                            PlaceholderColor="Gray"
                            TextColor="Black"
-                           Text="{Binding UserAddress}"
+                           Text="{Binding ProjectAddress}"
                            x:Name="EAddress"                          
                            BackgroundColor="#e8e8e8"
                            HeightRequest="55"
                            Visual="Material"/>
-            </StackLayout>
-
-            <FlexLayout Direction="Row" JustifyContent="SpaceBetween" Margin="49, 100, 49, 0">
-                <Button Text="Отмена" 
+                
+                <FlexLayout Direction="Row" JustifyContent="Center" HorizontalOptions="Center">
+                    <Button Text="Отмена" 
                         CornerRadius="200" 
                         BackgroundColor="#00b2ff" 
                         TextColor="White" 
@@ -69,20 +68,21 @@
                         HeightRequest="49"
                         WidthRequest="149"
                         FontSize="15"
-                        VerticalOptions="End"/>
+                        VerticalOptions="End"
+                        Margin="0, 30, 10, 0"/>
 
-                <Button Text="Изменить" 
+                    <Button Text="Изменить" 
                         CornerRadius="200" 
                         BackgroundColor="#00b2ff" 
                         TextColor="White" 
                         x:Name="BChange" 
-                        Clicked="BChange_Clicked"
-                       
+                        Clicked="BChange_Clicked"                      
                         HeightRequest="49"
                         WidthRequest="149"
                         FontSize="15"
-                        Margin="11,0,0,0"/>
-            </FlexLayout>
+                        Margin="0, 30, 11, 0"/>
+                </FlexLayout>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -11,6 +11,7 @@ using AplusXamarinApp.Page.InformationProjectPage;
 using AplusXamarinApp.Page.SecondSprint;
 using AplusXamarinApp.Page;
 using AplusXamarinApp;
+using AplusXamarinApp.transfer;
 
 
 namespace AplusXamarinApp.Page.InformationProjectPage
@@ -21,11 +22,6 @@ namespace AplusXamarinApp.Page.InformationProjectPage
         public InformationImagesPage()
         {
             InitializeComponent();
-        }
-
-        private async void TEditingProjectImages_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ProjectEdit());
         }
     }
 }
