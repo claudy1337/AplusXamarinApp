@@ -34,8 +34,8 @@ DATA BASE
 | Login | Title |
 | Password | Picture `Resources` |
 | IDProject | Email |
-		| Address |
-		| Phone |
+|		| Address |
+|		| Phone |
 
 Packages NuGet
 ===========
