@@ -35,7 +35,7 @@ namespace AplusXamarinApp.Page.SecondSprint
                 {
                     App.Db.SaveItem(project);
                 }
-                await this.Navigation.PopAsync();
+                await Navigation.PushAsync(new SelectPeojectPage());
             }
         }
 
@@ -50,7 +50,7 @@ namespace AplusXamarinApp.Page.SecondSprint
             if (await DisplayAlert(" ", $"Вы точно хотите удалить {project.ProjectName}?", "Удалить", "Отмена"))
             {
                 App.Db.DeleteItem(project.Id);
-                await Navigation.PushAsync(new SelectedProjectPage());
+                await Navigation.PushAsync(new SelectPeojectPage());
             }
         }
     }
