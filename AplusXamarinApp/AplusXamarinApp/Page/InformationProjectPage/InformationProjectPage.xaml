@@ -8,7 +8,6 @@
     <ContentPage.Content>
         <ScrollView>
             <FlexLayout  Direction="Column" >
-                <Label Text="dfsf" />
                 <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                    In et ultricies orci, in porta sem. Vestibulum in risus iaculis, 
                    porta orci at, bibendum velit. Nam volutpat pulvinar feugiat. 
